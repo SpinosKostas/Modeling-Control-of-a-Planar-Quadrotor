@@ -22,7 +22,7 @@ State `x = [x, y, θ, ẋ, ẏ, θ̇]ᵀ ∈ ℝ⁶`, input `u = [T, τ]ᵀ ∈ 
 ```
          [ ẋ                                         ]
          [ ẏ                                         ]
-f(x,u) = [ $\ddot{\theta}$                            ]
+f(x,u) = [ θ̇`                                        ]
          [ (1/m)(−sinθ (T + f_y) + cosθ f_x)         ]
          [ (1/m)( cosθ (T + f_y) + sinθ f_x) − g     ]
          [ (τ − f_θ) / J                             ]
@@ -45,10 +45,10 @@ Input limits used in the constrained experiments: `T ∈ [0.5mg, 1.5mg]`, `τ �
 
 | Notebook | Contents |
 |----------|----------|
-| [`Question1.ipynb`](./Question1.ipynb) | Dynamics, system visualization, RK4 integration, open-loop hover simulation (position/velocity plots). |
-| [`Question2.ipynb`](./Question2.ipynb) | Linearization with JAX and finite-horizon Riccati recursion for LQR, plus closed-loop simulation with input clipping from several initial states. |
-| [`Question3.ipynb`](./Question3.ipynb) | MPC as a QP (ProxSuite) with `P_inf` terminal cost and input bounds. Covers far-away initial states, arbitrary reference points and noise. |
-| [`Trajectory.ipynb`](./Trajectory.ipynb) | MPC tracking of a circular reference trajectory (radius 20 m, period 60 s). |
+| [`System_design.ipynb`] | Dynamics, system visualization, RK4 integration, open-loop hover simulation (position/velocity plots). |
+| [`LQR.ipynb`] | Linearization with JAX and finite-horizon Riccati recursion for LQR, plus closed-loop simulation with input clipping from several initial states. |
+| [`MPC_QP.ipynb`] | MPC as a QP (ProxSuite) with `P_inf` terminal cost and input bounds. Covers far-away initial states, arbitrary reference points and noise. |
+| [`Trajectory.ipynb`] | MPC tracking of a circular reference trajectory (radius 20 m, period 60 s). |
 
 ## Method summary
 
@@ -152,5 +152,6 @@ K. Spinos, "Modeling and Control of A Planar Quadrotor."
 ```
 
 ## License
-
-Add your preferred license here (e.g. MIT).
+```
+No licence - open source project
+```
