@@ -20,12 +20,12 @@ The full write-up is in [`Modeling_and_Control_of_A_Planar_Quadrotor.pdf`](./Mod
 State `x = [x, y, θ, ẋ, ẏ, θ̇]ᵀ ∈ ℝ⁶`, input `u = [T, τ]ᵀ ∈ ℝ²` (thrust and torque).
 
 ```
-        [ ẋ                                         ]
-        [ ẏ                                         ]
-f(x,u) =[ θ̇                                         ]
-        [ (1/m)(−sinθ (T + f_y) + cosθ f_x)         ]
-        [ (1/m)( cosθ (T + f_y) + sinθ f_x) − g     ]
-        [ (τ − f_θ) / J                             ]
+         [ ẋ                                         ]
+         [ ẏ                                         ]
+f(x,u) = [ \dot{θ}                                   ]
+         [ (1/m)(−sinθ (T + f_y) + cosθ f_x)         ]
+         [ (1/m)( cosθ (T + f_y) + sinθ f_x) − g     ]
+         [ (τ − f_θ) / J                             ]
 ```
 
 Drag terms (in the local frame):
