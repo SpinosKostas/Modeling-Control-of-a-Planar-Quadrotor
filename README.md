@@ -22,7 +22,7 @@ State `x = [x, y, θ, ẋ, ẏ, θ̇]ᵀ ∈ ℝ⁶`, input `u = [T, τ]ᵀ ∈ 
 ```
          [ ẋ                                         ]
          [ ẏ                                         ]
-f(x,u) = [ $\dot{\theta}$                            ]
+f(x,u) = [ $\ddot{\theta}$                            ]
          [ (1/m)(−sinθ (T + f_y) + cosθ f_x)         ]
          [ (1/m)( cosθ (T + f_y) + sinθ f_x) − g     ]
          [ (τ − f_θ) / J                             ]
