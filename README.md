@@ -130,8 +130,8 @@ pip install numpy matplotlib jax jaxlib proxsuite jupyter
 
 ### Run
 ```bash
-git clone https://github.com/<your-username>/<your-repo>.git
-cd <your-repo>
+git clone https://github.com/SpinosKostas/Modeling-Control-of-a-Planar-Quadrotor
+cd Modeling-Control-of-a-Planar-Quadrotor
 jupyter notebook
 ```
 
